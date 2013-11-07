@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointTestAddIn", "PowerPointTestAddIn\PowerPointTestAddIn.csproj", "{BCC869B4-5332-43E3-B139-37DA2FAC84EF}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "PowerPointTestAddInSetup", "PowerPointTestAddInSetup\PowerPointTestAddInSetup.isproj", "{32BC3526-F706-4200-8134-D808DE43A55C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC869B4-5332-43E3-B139-37DA2FAC84EF}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{32BC3526-F706-4200-8134-D808DE43A55C}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{32BC3526-F706-4200-8134-D808DE43A55C}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{32BC3526-F706-4200-8134-D808DE43A55C}.Debug|Any CPU.ActiveCfg = DVD-5
+		{32BC3526-F706-4200-8134-D808DE43A55C}.Debug|Any CPU.Build.0 = DVD-5
+		{32BC3526-F706-4200-8134-D808DE43A55C}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{32BC3526-F706-4200-8134-D808DE43A55C}.DVD-5|Any CPU.Build.0 = DVD-5
+		{32BC3526-F706-4200-8134-D808DE43A55C}.Release|Any CPU.ActiveCfg = SingleImage
+		{32BC3526-F706-4200-8134-D808DE43A55C}.Release|Any CPU.Build.0 = SingleImage
+		{32BC3526-F706-4200-8134-D808DE43A55C}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{32BC3526-F706-4200-8134-D808DE43A55C}.SingleImage|Any CPU.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

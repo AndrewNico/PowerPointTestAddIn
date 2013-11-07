@@ -342,8 +342,7 @@
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{05B9E8D6-60F1-489A-A3D2-9CD232B92C66}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerPointTestAddIn.Content_Files</td><td>{73B9832F-343E-43FE-A946-53C44D11A982}</td><td>INSTALLDIR</td><td>2</td><td/><td>powerpointtestaddin.content_</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerPointTestAddIn.Primary_output</td><td>{BE6F0C51-1C0B-4EBD-961E-0A16883D5608}</td><td>INSTALLDIR</td><td>2</td><td/><td>powerpointtestaddin.primary_</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerPointTestAddIn.dll</td><td>{2438637B-6BFB-461B-9099-415E570897F8}</td><td>INSTALLDIR</td><td>2</td><td/><td>powerpointtestaddin.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1052,7 +1051,6 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1863,8 +1861,7 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
-		<row><td>AlwaysInstall</td><td>PowerPointTestAddIn.Content_Files</td></row>
-		<row><td>AlwaysInstall</td><td>PowerPointTestAddIn.Primary_output</td></row>
+		<row><td>AlwaysInstall</td><td>PowerPointTestAddIn.dll</td></row>
 	</table>
 
 	<table name="File">
@@ -1879,8 +1876,10 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>powerpointtestaddin.content_</td><td>PowerPointTestAddIn.Content_Files</td><td>PowerPointTestAddIn.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PowerPointTestAddIn&gt;|ContentFiles</td><td>3</td><td/></row>
-		<row><td>powerpointtestaddin.primary_</td><td>PowerPointTestAddIn.Primary_output</td><td>PowerPointTestAddIn.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PowerPointTestAddIn&gt;|Built</td><td>3</td><td/></row>
+		<row><td>powerpointtestaddin.dll</td><td>PowerPointTestAddIn.dll</td><td>POWERP~1.DLL|PowerPointTestAddIn.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.dll</td><td>1</td><td/></row>
+		<row><td>powerpointtestaddin.dll.mani</td><td>ISX_DEFAULTCOMPONENT1</td><td>POWERP~1.MAN|PowerPointTestAddIn.dll.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.dll.manifest</td><td>1</td><td/></row>
+		<row><td>powerpointtestaddin.pdb</td><td>ISX_DEFAULTCOMPONENT1</td><td>POWERP~1.PDB|PowerPointTestAddIn.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.pdb</td><td>1</td><td/></row>
+		<row><td>powerpointtestaddin.vsto</td><td>ISX_DEFAULTCOMPONENT1</td><td>POWERP~1.VST|PowerPointTestAddIn.vsto</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.vsto</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2026,8 +2025,7 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_1ABD1473_D17C_4651_B8DF_0EB4E7CB0157_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerPointTestAddIn.Content_Files</td><td/><td/><td>_D3D0AE2E_0415_4CE0_A80D_586888365BF0_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerPointTestAddIn.Primary_output</td><td/><td/><td>_3A466074_F07A_4134_8645_6A6EE8A75FCB_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerPointTestAddIn.dll</td><td/><td/><td>_4F10CC7B_BD80_4C12_87B5_9CE337C4E213_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2403,7 +2401,7 @@
 		<row><td>DVD-18</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>15.83</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
 		<row><td>DVD-5</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1049</td><td>0</td><td>2</td><td>Intel</td><td/><td>1049</td><td>0</td><td>4.38</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
 		<row><td>DVD-9</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>7.95</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
-		<row><td>SingleImage</td><td>Express</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddInSetup\PowerPointTestAddInSetup</td><td>PackageName</td><td>1</td><td>1049</td><td>0</td><td>1</td><td>Intel</td><td/><td>1049</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>108573</td><td/><td/><td/><td>3</td></row>
+		<row><td>SingleImage</td><td>Express</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddInSetup\PowerPointTestAddInSetup</td><td>PackageName</td><td>1</td><td>1049</td><td>0</td><td>1</td><td>Intel</td><td/><td>1049</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>108572</td><td/><td/><td/><td>3</td></row>
 		<row><td>WebDeployment</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>PackageName</td><td>4</td><td>1033</td><td>2</td><td>1</td><td>Intel</td><td/><td>1033</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>124941</td><td/><td/><td/><td>3</td></row>
 	</table>
 
@@ -3973,8 +3971,8 @@
 		<col def="S0">Value</col>
 		<row><td>ActiveLanguage</td><td>1049</td></row>
 		<row><td>Comments</td><td/></row>
-		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="a4f66fafb30885f14d732b73e196bba0">
-RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
+		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="de9f554a3bc05c12be9c31b998217995">
+UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 			</td></row>
 		<row><td>DefaultProductConfiguration</td><td>Express</td></row>
 		<row><td>EnableSwidtag</td><td>1</td></row>
@@ -4436,10 +4434,10 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S0">Value</col>
 		<col def="s72">Component_</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>Registry1</td><td>-1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>Description</td><td>PowerPoint Test AddIn</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
-		<row><td>Registry2</td><td>-1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>FriendlyName</td><td>PowerPoint Test AddIn</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
-		<row><td>Registry3</td><td>-1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>LoadBehavior</td><td>#3</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
-		<row><td>Registry4</td><td>-1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>Manifest</td><td>file:///[INSTALLDIR]PowerPointTestAddIn.vsto|vstolocal</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
+		<row><td>Registry1</td><td>1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>Description</td><td>PowerPoint Test AddIn</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
+		<row><td>Registry2</td><td>1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>FriendlyName</td><td>PowerPoint Test AddIn</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
+		<row><td>Registry3</td><td>1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>LoadBehavior</td><td>#3</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
+		<row><td>Registry4</td><td>1</td><td>Software\Microsoft\Office\PowerPoint\Addins\PowerPointTestAddIn</td><td>Manifest</td><td>file:///[INSTALLDIR]PowerPointTestAddIn.vsto|vstolocal</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
 	</table>
 
 	<table name="RemoveFile">
