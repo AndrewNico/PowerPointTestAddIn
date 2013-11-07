@@ -7,6 +7,7 @@ using PowerPoint = Microsoft.Office.Interop.PowerPoint;
 using Office = Microsoft.Office.Core;
 using Microsoft.Office.Core;
 using Microsoft.Office.Interop.PowerPoint;
+using System.Windows.Forms;
 
 namespace PowerPointTestAddIn
 {
@@ -37,18 +38,25 @@ namespace PowerPointTestAddIn
         /// </summary>
         private void createPresentation()
         {
-            // Добавляем презентацию.
-            Presentation presentation = Application.Presentations.Add(MsoTriState.msoTrue);
+            try
+            {
+                // Добавляем презентацию.
+                Presentation presentation = Application.Presentations.Add(MsoTriState.msoTrue);
 
-            // Добавляем флаг и устанавливаем, что презентация была создана надстройкой.
-            DocumentProperties properties = presentation.CustomDocumentProperties;
-            properties.Add(customPropertyName, false, MsoDocProperties.msoPropertyTypeBoolean,
-                true, missing);
+                // Добавляем флаг и устанавливаем, что презентация была создана надстройкой.
+                DocumentProperties properties = presentation.CustomDocumentProperties;
+                properties.Add(customPropertyName, false, MsoDocProperties.msoPropertyTypeBoolean,
+                    true, missing);
 
-            // Добавляем слайды.
-            presentation.Slides.Add(1, PpSlideLayout.ppLayoutTitleOnly);		// Только с заголовком
-            presentation.Slides.Add(2, PpSlideLayout.ppLayoutText);			    // С текстовым полем
-            presentation.Slides.Add(3, PpSlideLayout.ppLayoutTwoColumnText);	// С двумя текстовыми полями
+                // Добавляем слайды.
+                presentation.Slides.Add(1, PpSlideLayout.ppLayoutTitleOnly);		// Только с заголовком
+                presentation.Slides.Add(2, PpSlideLayout.ppLayoutText);			    // С текстовым полем
+                presentation.Slides.Add(3, PpSlideLayout.ppLayoutTwoColumnText);	// С двумя текстовыми полями
+            }
+            catch (Exception e)
+            {
+                showErrStack(e);        
+            }
         }
 
         /// <summary>
@@ -56,10 +64,16 @@ namespace PowerPointTestAddIn
         /// </summary>
         private void addSlide()
         {
-            Presentation presentation = Application.ActivePresentation;
+            try
+            {
+                Presentation presentation = Application.ActivePresentation;
 
-            // Добавляем пустой слайд в конец.
-            presentation.Slides.Add(presentation.Slides.Count + 1, PpSlideLayout.ppLayoutBlank);
+                presentation.Slides.Add(presentation.Slides.Count + 1, PpSlideLayout.ppLayoutBlank);
+            }
+            catch (Exception e)
+            {
+                showErrStack(e);
+            }
         }
 
         /// <summary>
@@ -96,6 +110,25 @@ namespace PowerPointTestAddIn
                     return true;
             }
             return false;
+        }
+
+        /// <summary>
+        /// Отображает сообщения об ошибке по всему стеку 
+        /// </summary>
+        /// <param name="e">Объект ошибки</param>
+        private void showErrStack(Exception e)
+        {
+            string err = e.Message + Environment.NewLine;
+            Exception tmp = e;
+
+            while (tmp.InnerException != null)
+            {
+                tmp = tmp.InnerException;
+                err = err + tmp.Message + Environment.NewLine;
+            }
+
+            MessageBox.Show(err, "Ошибка!",
+                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         #region Код, автоматически созданный VSTO
