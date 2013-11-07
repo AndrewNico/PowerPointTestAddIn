@@ -342,7 +342,7 @@
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{05B9E8D6-60F1-489A-A3D2-9CD232B92C66}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PowerPointTestAddIn.dll</td><td>{2438637B-6BFB-461B-9099-415E570897F8}</td><td>INSTALLDIR</td><td>2</td><td/><td>powerpointtestaddin.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PowerPointTestAddIn.Primary_output1</td><td>{10FC45B1-8553-4A6D-B57D-303B9A8041A4}</td><td>INSTALLDIR</td><td>2</td><td/><td>powerpointtestaddin.primary_1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1861,7 +1861,7 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
-		<row><td>AlwaysInstall</td><td>PowerPointTestAddIn.dll</td></row>
+		<row><td>AlwaysInstall</td><td>PowerPointTestAddIn.Primary_output1</td></row>
 	</table>
 
 	<table name="File">
@@ -1876,9 +1876,8 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>powerpointtestaddin.dll</td><td>PowerPointTestAddIn.dll</td><td>POWERP~1.DLL|PowerPointTestAddIn.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.dll</td><td>1</td><td/></row>
 		<row><td>powerpointtestaddin.dll.mani</td><td>ISX_DEFAULTCOMPONENT1</td><td>POWERP~1.MAN|PowerPointTestAddIn.dll.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.dll.manifest</td><td>1</td><td/></row>
-		<row><td>powerpointtestaddin.pdb</td><td>ISX_DEFAULTCOMPONENT1</td><td>POWERP~1.PDB|PowerPointTestAddIn.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.pdb</td><td>1</td><td/></row>
+		<row><td>powerpointtestaddin.primary_1</td><td>PowerPointTestAddIn.Primary_output1</td><td>PowerPointTestAddIn.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PowerPointTestAddIn&gt;|Built</td><td>3</td><td/></row>
 		<row><td>powerpointtestaddin.vsto</td><td>ISX_DEFAULTCOMPONENT1</td><td>POWERP~1.VST|PowerPointTestAddIn.vsto</td><td>0</td><td/><td/><td/><td>1</td><td>D:\My Work\Test projects C#\PowerPointTestAddIn\PowerPointTestAddIn\bin\Release\PowerPointTestAddIn.vsto</td><td>1</td><td/></row>
 	</table>
 
@@ -2025,7 +2024,7 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_1ABD1473_D17C_4651_B8DF_0EB4E7CB0157_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PowerPointTestAddIn.dll</td><td/><td/><td>_4F10CC7B_BD80_4C12_87B5_9CE337C4E213_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PowerPointTestAddIn.Primary_output1</td><td/><td/><td>_C215E956_9904_4CB3_9984_FF73E7F5F573_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">

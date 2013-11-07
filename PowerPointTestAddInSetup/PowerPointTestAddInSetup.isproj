@@ -31,4 +31,10 @@
 	<ItemGroup/>
 	<ItemGroup/>
 	<ItemGroup/>
+	<ItemGroup>
+		<ProjectReference Include="..\PowerPointTestAddIn\PowerPointTestAddIn.csproj">
+			<Name>PowerPointTestAddIn</Name>
+			<Project>{BCC869B4-5332-43E3-B139-37DA2FAC84EF}</Project>
+		</ProjectReference>
+	</ItemGroup>
 </Project>
